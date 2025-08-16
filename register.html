@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    /* Page Background */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff69b4, #fff8dc, #ffd700, #000);
+      background-size: 400% 400%;
+      animation: gradientMove 15s ease infinite;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    @keyframes gradientMove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    /* Container */
+    .form-container {
+      background: rgba(255, 255, 255, 0.95);
+      border: 3px solid gold;
+      border-radius: 25px;
+      padding: 30px 40px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    }
+
+    h1 {
+      text-align: center;
+      color: hotpink;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px gold;
+    }
+
+    /* Bible Quote */
+    #bible-quote {
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      color: #ff1493;
+      margin-bottom: 25px;
+      font-size: 1.1em;
+    }
+
+    /* Form Elements */
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 5px;
+      border: 2px solid hotpink;
+      border-radius: 12px;
+      font-size: 1em;
+      transition: all 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: gold;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+      outline: none;
+    }
+
+    /* Checkbox & Radio */
+    .pink-box {
+      margin-top: 15px;
+      padding: 10px;
+      border: 2px solid hotpink;
+      border-radius: 12px;
+      background: #fff0f5;
+    }
+
+    /* Buttons */
+    .button-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .glow-btn {
+      flex: 1;
+      margin: 5px;
+      padding: 12px 0;
+      font-weight: bold;
+      font-size: 1em;
+      color: #fff;
+      background: hotpink;
+      border: 2px solid gold;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px hotpink, 0 0 20px gold inset;
+    }
+
+    .glow-btn:hover {
+      background: gold;
+      color: hotpink;
+      box-shadow: 0 0 20px gold, 0 0 25px hotpink inset;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: hotpink;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: gold;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Contact Me</h1>
+
+    <div id="bible-quote">
+      "For I know the plans I have for you," declares the Lord, "plans to prosper you and not to harm you, plans to give you hope and a future." - Jeremiah 29:11
+    </div>
+
+    <form action="index.html" method="post">
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" placeholder="💖 Enter your lovely name">
+
+      <label for="phone_number">Phone Number:</label>
+      <input type="number" id="phone_number" name="phone_number" placeholder="📞 Your magical number">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="📧 Your sparkly email">
+
+      <label for="birth_day">Birth Day:</label>
+      <input type="date" id="birth_day" name="birth_day">
+
+      <div class="pink-box">
+        <label>Favourite Fruits:</label>
+        Mango <input type="checkbox" name="fruits" value="Mango">
+        Orange <input type="checkbox" name="fruits" value="Orange">
+        Apple <input type="checkbox" name="fruits" value="Apple">
+        Banana <input type="checkbox" name="fruits" value="Banana">
+        Pineapple <input type="checkbox" name="fruits" value="Pineapple">
+
+        <label>Gender:</label>
+        Male <input type="radio" name="gender" value="Male">
+        Female <input type="radio" name="gender" value="Female">
+      </div>
+
+      <label for="favourite_colour">Favourite Colour:</label>
+      <select id="favourite_colour" name="favourite_colour">
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Yellow</option>
+        <option>Green</option>
+        <option>Blue</option>
+        <option>Indigo</option>
+        <option>Violet</option>
+        <option>Purple</option>
+        <option>Pink</option>
+      </select>
+
+      <label for="comment">Leave a Comment:</label>
+      <textarea id="comment" name="comment" rows="5" placeholder="✨ Write something cute here..."></textarea>
+
+      <div class="button-container">
+        <input type="submit" class="glow-btn" value="Submit">
+        <input type="reset" class="glow-btn" value="Reset">
+      </div>
+
+      <a href="index.html">Visit My Home Page! 😜</a>
+    </form>
+  </div>
+
+  <script>
+    // Bible verses rotation every 15 seconds
+    const verses = [
+      `"For I know the plans I have for you," declares the Lord. - Jeremiah 29:11`,
+      `"The Lord is my shepherd; I shall not want." - Psalm 23:1`,
+      `"I can do all things through Christ who strengthens me." - Philippians 4:13`,
+      `"Trust in the Lord with all your heart and lean not on your own understanding." - Proverbs 3:5`,
+      `"Be strong and courageous. Do not be afraid." - Joshua 1:9`
+    ];
+
+    let index = 0;
+    const quoteElement = document.getElementById('bible-quote');
+
+    setInterval(() => {
+      index = (index + 1) % verses.length;
+      quoteElement.innerText = verses[index];
+    }, 15000); // 15 seconds
+  </script>
+
+</body>
+</html>

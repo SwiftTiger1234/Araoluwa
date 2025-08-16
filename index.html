@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Ara's Website</title>
+  <style>
+    /* Animated Gradient Background */
+    body {
+      background: linear-gradient(-45deg, #ffc0cb, #ffb6f0, #ffe6f9, #ffd1f7);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      /* removed overflow:hidden to allow scrolling */
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Rainbow Glowing Name Animation */
+    h1 {
+      font-size: 48px;
+      animation: rainbowGlow 3s infinite alternate;
+    }
+    @keyframes rainbowGlow {
+      0%   { color: red; text-shadow: 0 0 10px red; }
+      20%  { color: orange; text-shadow: 0 0 10px orange; }
+      40%  { color: yellow; text-shadow: 0 0 10px yellow; }
+      60%  { color: green; text-shadow: 0 0 10px green; }
+      80%  { color: blue; text-shadow: 0 0 10px blue; }
+      100% { color: purple; text-shadow: 0 0 10px purple; }
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 2px solid black;
+      color: white;
+    }
+    th {
+      background-color: pink;
+      color: black;
+    }
+
+    /* Protected Images + Rainbow Glow (No Spin) */
+    .protected-image {
+      position: relative;
+      display: inline-block;
+    }
+    .protected-image img {
+      width: 400px;
+      height: auto;
+      pointer-events: none;
+      user-select: none;
+      border-radius: 20px;
+      animation: rainbowPhotoGlow 3s infinite alternate;
+    }
+
+    @keyframes rainbowPhotoGlow {
+      0% { box-shadow: 0 0 30px red; }
+      20% { box-shadow: 0 0 30px orange; }
+      40% { box-shadow: 0 0 30px yellow; }
+      60% { box-shadow: 0 0 30px green; }
+      80% { box-shadow: 0 0 30px blue; }
+      100% { box-shadow: 0 0 30px purple; }
+    }
+
+    ul, ol {
+      text-align: left;
+      display: inline-block;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Falling Emojis */
+    .emoji {
+      position: fixed; /* fixed so scrolling works */
+      font-size: 2em;
+      animation: fall linear forwards;
+      z-index: 1000;
+      pointer-events: none; /* don’t block clicks */
+    }
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Protected Main Photo -->
+  <div class="protected-image">
+    <img src="ARA'S CUTE PHOTO.jpg" alt="Ara's Picture 👧✨🌸💖">
+  </div>
+
+  <hr>
+
+  <h1>Ariba Shabach Araoluwa ✨🌸💖🦋</h1>
+  <p>I am a Student from <strong>Queen's College Yaba, Lagos 🏫🌈</strong>. I love to look after others ❤️💖,
+  and I am also a very kind person at heart 💕✨.</p>
+  <p>I love <strong>Sports 🏃‍♀️⚽🏅</strong>, <em>I am also an athlete 💪🌟.</em></p>
+  <p>I have so much interest in 💻 Technology 📱🖥.</p>
+  <p>I Am A Student 👩‍🎓, A Web Developer 💻🦋, and A Godly Person ✝️🙏 too.</p>
+  <p><strong>🙏 I Want To Thank Sister Esther For Giving Me The Chance To Learn HTML 💖🎀.</strong></p>
+  <p>I have a very hardworking <b>Father 👨‍👧💙</b> and a very loving <b>Mother 👩‍👧💗</b>.</p>
+  <p>I Love My MUM 💗 And DAD 💙 Because They Are Always There For Me, And Ready to Sacrifice Anything For Me ❤️✨.</p>
+  <p>I WOULD HAVE BEEN NOTHING WITHOUT MY MUM AND DAD 👨‍👩‍👧‍👦💖.</p>
+  <p>I Also Have Two Siblings — A Handsome Brother 👦💫 and A Cute Sister 👧🌸.</p>
+
+  <hr>
+  <h3 style="color: Green;"><u>🚗 Places I Have Been To ✈️💖</u></h3>
+  <ul>
+    <li><i>🏙 Lagos 🌟</i></li>
+    <li><i>🏞 Abeokuta 🌸</i></li>
+    <li><i>📍 Yaba 💎</i></li>
+    <li><i>🗻 Olumo Rock 🦋</i></li>
+    <li><i>🌳 Ibadan 🌈</i></li>
+  </ul>
+
+  <hr>
+  <h3 style="color: Red;"><u>💎 Interesting Things I Love To Do 🎉✨</u></h3>
+  <ol>
+    <li>✅ Studying the Bible 🙏📖💫</li>
+    <li>✅ Singing 🎤🎶💖</li>
+    <li>✅ Reading 📚✨</li>
+    <li>✅ Athletics (Running) 🏃‍♀️🏅🌸</li>
+    <li>✅ Cooking 🍳🥗💗</li>
+    <li>✅ Watching Movies 🎬🍿💖</li>
+    <li>✅ Listening To Music 🎧🎵🌈</li>
+    <li>✅ Dancing 💃🎀✨</li>
+  </ol>
+
+  <hr>
+  <h3 style="color: Purple;"><u>✨ My Description List ✨💖</u></h3>
+  <dl>
+    <dt><b>JavaScript 💻🌟</b></dt>
+    <dd>JavaScript is a high-level, text-based programming language used in browsers to make web pages interactive 🖥✨.</dd>
+    <dt><b>Photosynthesis 🌱☀️💫</b></dt>
+    <dd>Photosynthesis is the process by which green plants, algae, and some bacteria convert sunlight into chemical energy 🍃🌸.</dd>
+  </dl>
+
+  <hr>
+  <h3><u>✨ My Favorite Sport Athlete ✨🏃‍♀️💖</u></h3>
+  <div class="protected-image">
+    <img src="Shacar.jpg" alt="Sha'Carri Richardson 🏃‍♀️💫">
+  </div>
+  <p><u style="font-size: 25px">Sha'Carri Richardson 🌟💖</u></p>
+  <div class="protected-image">
+    <img src="Shacar 3.jpg" alt="Sha'Carri Richardson Running 🏅✨">
+  </div>
+  <p>Athletics (Running) 🏃‍♀️🏆💫</p>
+
+  <hr>
+  <h3 style="color: Red;"><u>✨ My Weekly Activities ✨🎀</u></h3>
+  <table>
+    <tr>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <tr bgcolor="red">
+      <td>🍳 Cook At Home 💖</td>
+      <td>💻 Study Coding 🌸</td>
+      <td>🎬 Watch Movies ✨</td>
+      <td>🧹 Clean The House 💫</td>
+      <td>📚 Read My Books 💗</td>
+      <td>🏃‍♀️ Sports Training 🌟</td>
+      <td>🙏 Pray and Read Bible 💖</td>
+    </tr>
+    <tr bgcolor="orange">
+      <td>🎮 Play Games 🌸</td>
+      <td>🛏 Arrange My Room 💗</td>
+      <td>💪 Do My Workouts 💫</td>
+      <td>💌 Chat With Friends ✨</td>
+      <td>🎵 Go For Music Lessons 🎀</td>
+      <td>🈯 Practice Mandarin 🌈</td>
+      <td>⛪ Go To Church 💖</td>
+    </tr>
+  </table>
+
+  <hr>
+  <a style="font-size: 25px" href="register.html">📩 Contact Or Reach Out To Me LOL 😘💖🌸</a>
+
+  <!-- Falling Emojis Script -->
+  <script>
+    const emojis = ["💖", "🌸", "✨", "💎", "🦋", "🌈", "🎀"];
+    function createEmoji() {
+      const emoji = document.createElement("div");
+      emoji.classList.add("emoji");
+      emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+      emoji.style.left = Math.random() * 100 + "vw";
+      emoji.style.animationDuration = (Math.random() * 3 + 2) + "s";
+      document.body.appendChild(emoji);
+      setTimeout(() => {
+        emoji.remove();
+      }, 5000);
+    }
+    setInterval(createEmoji, 300);
+  </script>
+
+</body>
+</html>
